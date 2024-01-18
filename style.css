@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    border: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+
+    background-color: #170312;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: #1d011b;
+}
+
+.icons {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.icons ul li {
+    list-style: none;
+    border: transparent;
+    font-weight: 400;
+    padding: 0 4px;
+    margin-right: 45px;
+}
+
+.icons ul li:hover {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 3px solid #EFBCD5;
+    color: #EFBCD5;
+}
+
+.icons ul li a:hover {
+    color: #EFBCD5;
+}
+
+.icons ul {
+    display: flex;
+    text-decoration: none;
+
+}
+
+.portfolio {
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 30%;
+    color: #EFBCD5;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.content {
+    height: 510px;
+    width: 40%;
+    font-size: 3rem;
+    padding: 150px 0;
+    padding-left: 50px;
+    color: white;
+}
+
+.content span {
+    color: #EFBCD5;
+    font-weight: 600;
+}
+
+.photo {
+    height: 510px;
+    width: 40%;
+}
+
+.photo img {
+    width: 80%;
+    border: 2px solid black;
+
+}
+
+.buttons {
+    margin: 30px 0;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+    border-style: none;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.buttons div {
+    position: relative;
+}
+
+.buttons div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EFBCD5;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+
+}
+
+.buttons div:hover:before {
+    transform: translateX(0%);
+    z-index: -1;
+}
+
+.buttons div:hover {
+    color: black;
+    transition: all 0.3s linear;
+    border: 1px solid black;
+}
+
+/*second*/
+.projects {
+    padding: 40px 100px;
+}
+
+.projects h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #EFBCD5;
+    padding-left: 30px;
+}
+
+.amazon-box {
+    height: 300px;
+    background-color: #9b6f84;
+    margin: 50px 0;
+    border-radius: 50px;
+    border: 5px solid #1d011b;
+    background-color: #240221;
+    padding: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    color: white;
+}
+
+.photo-box {
+    height: 100%;
+    width: 45%;
+    border-radius: 50px;
+}
+
+.text-box {
+    width: 100%;
+    height: 100%;
+
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.ss-section {
+    height: 100%;
+    width: 45%;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.ss-section img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50px;
+    border: 6px solid #1d011b;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.photo-box img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 50px;
+    border: 5px solid #1d011b;
+    object-fit: cover;
+}
+
+.amazon-box :hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>'), auto;
+}
+
+.portfolio-img-box :hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-bar-chart-2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M8 18v-1"/><path d="M16 18v-3"/></svg>'), auto;
+}
+
+.heading {
+    display: flex;
+    align-items: baseline;
+    height: 50px;
+    justify-content: center;
+}
+
+.amazon-heading {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-right: 10px;
+    color: white;
+}
+
+.heading:hover {
+    color: #EFBCD5;
+
+    .amazon-heading:hover {
+        color: #EFBCD5;
+    }
+}
+
+.sub-heading {
+    margin: 0 20px;
+}
+
+.text-box {}
+
+.features li {
+    font-size: 1rem;
+    margin: 25px 0;
+    list-style: none;
+    text-align: center;
+}
+
+.features li:hover {
+    color: #EFBCD5;
+}
+
+.texting-buttons {
+    margin: 45px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texting-buttons div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    font-weight: 600;
+    border-style: none;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.texting-buttons div {
+    position: relative;
+}
+
+.texting-buttons div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #EFBCD5;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+
+.texting-buttons div:hover:before {
+    transform: translateX(0%);
+    z-index: -1;
+}
+
+.texting-buttons div:hover {
+    color: black;
+    transition: all 0.3s linear;
+    border: 1px solid black;
+    z-index: +3;
+}
+/*footer*/
+.contacts{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: #1d011b;
+}
+.contacts div a{
+    display: flex;
+    align-items: baseline;
+}
+.contacts div p{
+    margin-left: 3px;
+}
